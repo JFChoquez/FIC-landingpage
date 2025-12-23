@@ -1,0 +1,98 @@
+@import url("./vars.css");
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fcfcfc;
+    color: var(--texto-oscuro);
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    background-color: var(--rojo-oscuro);
+    border-bottom: 4px solid var(--crema-suave);
+}
+.navbar-brand img {
+    height: 50px;
+    margin-right: 10px;
+}
+.navbar-brand, .nav-link {
+    color: white !important;
+    font-weight: 500;
+}
+.nav-link:hover {
+    color: var(--crema-suave) !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* --- HEADER SECCIÓN --- */
+.admision-header {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://diariocorreo.pe/resizer/v2/UQVGWVAMKNGNNKDRTT4X3VKRGY.JPG?auth=7ec34b0db6af498f50bbe82e88c33c43ad5bca429dcb0a24debc0c150c5be4e6&width=5184&height=3456&quality=75&smart=true');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+/* --- CARDS DE DATOS CLAVE --- */
+.info-card {
+    border: none;
+    background: white;
+    border-bottom: 5px solid var(--rojo-oscuro);
+    transition: 0.3s;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.info-card:hover {
+    transform: translateY(-5px);
+}
+.info-card i {
+    font-size: 3rem;
+    color: var(--rojo-oscuro);
+}
+
+/* --- SECCIÓN MOTIVACIONAL --- */
+.mensaje-motivador {
+    background-color: var(--crema-suave);
+    border-radius: 20px;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.mensaje-motivador::before {
+    content: "\f203"; /* Icono de building en Bootstrap Icons */
+    font-family: bootstrap-icons;
+    position: absolute;
+    font-size: 15rem;
+    color: rgba(139, 0, 0, 0.05);
+    right: -20px;
+    bottom: -50px;
+}
+
+.btn-pdf {
+    background-color: var(--rojo-oscuro);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+.btn-pdf:hover {
+    background-color: #a00000;
+    color: white;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: var(--rojo-oscuro);
+    color: white;
+    padding: 40px 0;
+}

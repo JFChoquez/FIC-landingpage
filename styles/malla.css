@@ -1,0 +1,84 @@
+@import url("./vars.css");
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fcfcfc;
+    color: var(--texto-oscuro);
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    background-color: var(--rojo-oscuro);
+    border-bottom: 4px solid var(--crema-suave);
+}
+.navbar-brand img {
+    height: 50px;
+    margin-right: 10px;
+}
+.navbar-brand, .nav-link {
+    color: white !important;
+    font-weight: 500;
+}
+.nav-link:hover {
+    color: var(--crema-suave) !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* --- HEADER SECCIÓN --- */
+.malla-header {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://diariocorreo.pe/resizer/v2/UQVGWVAMKNGNNKDRTT4X3VKRGY.JPG?auth=7ec34b0db6af498f50bbe82e88c33c43ad5bca429dcb0a24debc0c150c5be4e6&width=5184&height=3456&quality=75&smart=true');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section-title {
+    color: var(--rojo-oscuro);
+    font-weight: bold;
+    border-bottom: 3px solid var(--crema-suave);
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.table-custom {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.table-custom thead {
+    background-color: var(--rojo-oscuro);
+    color: white;
+}
+
+.table-custom tbody tr:hover {
+    background-color: rgba(247, 245, 178, 0.3);
+}
+
+.btn-download {
+    color: var(--rojo-oscuro);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.2s;
+}
+
+.btn-download:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--rojo-oscuro);
+    color: white;
+    padding: 40px 0;
+}
